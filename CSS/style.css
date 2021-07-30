@@ -1,0 +1,245 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS Variables*/
+:root{
+    --navbar-height: 59px;
+}
+/* navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0%;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/* Navigation Bar: Logo and Image */
+#logo{
+     margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 5px;
+}
+#logo h3{
+    color: white;
+    text-align: center;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 1.5;
+}
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 503px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../img/bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.0;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: 'Bree Serif', serif;
+}
+footer{
+    background: rgb(12, 12, 58);
+    color: white;
+    padding: 3px 20px;
+}
+/* services section */
+#services{
+    margin: 22px;
+    display: inline-flex;
+
+}
+#services .box{
+    border: 2px solid rgb(76, 130, 248);
+    padding: 12px;
+    margin: 0.5px 0.5px;
+    border-radius: 16px;
+    background: #5292f3;    
+}
+#services .box img{
+    height: 340px;
+    margin: auto;
+    display: block;    
+}
+#services .box p{
+    font-family: 'Quicksand', sans-serif;  
+}
+/* About us section */
+#About-Us{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 300px;
+    height: 503px;
+    justify-content: center;
+    align-items: center;
+}    
+#About-Us::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+#About-Us h1{
+    color: rgb(15, 41, 97);
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.0;
+}
+#About-Us p{
+    color: rgb(19, 54, 129);
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: 'Quicksand', sans-serif;
+}
+/* contact section */
+#contact{
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    padding: 3px 300px;
+}
+#contact::before{
+    content: "";
+    background: url('../img/bg.jpg');
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+#Contact h1{
+    color: rgb(1, 8, 24);
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3.5rem;
+}
+#Contact h2{
+    color: rgb(7, 23, 56);
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.0rem;
+}
+#Contact p{
+    color: rgb(19, 54, 129);
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: 'Quicksand', sans-serif;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    margin: 5px;
+    padding: 0.9rem;
+    border-radius: 2px;
+    font-size: 1.0rem;
+    background-color: rgb(12, 12, 58);
+}
+#contact-box form{
+    width: 30%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Quicksand', sans-serif;
+}
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Quicksand', sans-serif;
+}
+.h-secondary{
+    font-size: 1rem;
+    padding: 12px;
+    font-family: 'Quicksand', sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(10, 87, 201);
+    background-color: rgb(97, 178, 224);
+    color: white;
+    margin: 5px;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+.btn1{
+    padding: 6px 20px;
+    border: 2px solid rgb(10, 87, 201);
+    background-color: rgb(10, 87, 201);
+    color: white;
+    margin: 50px;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
